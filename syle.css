@@ -1,0 +1,209 @@
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            font-size: 2.5rem;
+        }
+        .header p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+       /* Top Navigation */
+        .topnav {
+            display: flex; /* Use flexbox to keep links in one row */
+            justify-content: flex-start;
+            background-color: #333de0;
+            overflow: hidden;
+        }
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+        .topnav a:hover {
+            background-color: #42ddd5;
+            color: #ff0000;
+        }
+        .topnav a:last-child {
+            margin-left: auto; /* Push the last link (Contact) to the right */
+        }
+
+        /* Columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .leftcolumn {
+            flex: 60%;
+            padding-right: 20px;
+        }
+        .rightcolumn {
+            flex: 40%;
+        }
+
+        /* Card Styling */
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .card h5 {
+            color: #777;
+            margin-bottom: 15px;
+        }
+        .img {
+            background-color: #aaa;
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            height: 30vh; /* Relative height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        
+        
+footer {
+    background-color: #0A2A4E;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+
+}
+
+ .social-icons a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+ .social-icons a:hover {
+    color: red; /* Change color on hover */
+}
+
+ .footer-links {
+    margin: 10px 0;
+}
+ .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+        .footer-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .footer-column {
+            width: 48%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .footer-column h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin: 10px 0;
+        }
+        .footer-column ul li a {
+            color: #B0BEC5;
+            text-decoration: none;
+        }
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+       
+       
+        .footer-copyright {
+            font-size: 0.9em;
+            color: #B0BEC5;
+        }
+        
+      
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) { /* Tablet */
+            .leftcolumn {
+                flex: 60%;
+            }
+            .rightcolumn {
+                flex: 40%;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) { /* Phone */
+            .leftcolumn, .rightcolumn {
+                flex: 100%;
+                padding-right: 0;
+            }
+            .fakeimg {
+                height: 15vh;
+            }
+        }
+
+        @media screen and (max-width: 400px) { /* Small Phone */
+            .topnav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+  
